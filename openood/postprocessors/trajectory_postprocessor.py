@@ -243,8 +243,8 @@ def compute_energy_scores(logits_np, T=1.0):
         np.log(np.sum(np.exp(scaled - max_val), axis=1) + 1e-30)
         + max_val.squeeze(1)
     )
-    #return -lse  # higher = more OOD
-    return lse
+    return -lse  # higher = more OOD
+    # return lse
 
 
 # ============================================================
