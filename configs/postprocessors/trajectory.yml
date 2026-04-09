@@ -1,0 +1,6 @@
+postprocessor:
+  name: trajectory
+  APS_mode: False
+  nu: 0.03
+  gamma: scale
+  n_coreset: 5000
